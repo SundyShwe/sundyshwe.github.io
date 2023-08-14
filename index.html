@@ -1,118 +1,365 @@
 <!DOCTYPE html>
-<!-- saved from url=(0052)https://colorlib.com/etc/cs/comingsoon_03/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Sundy Shwe</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sundy Thawdarr Shwe</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">&lt; SUNDY /&gt;</a>
+        </div>
 
-<link rel="icon" type="image/png" href="images/favicon.ico">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-<link rel="stylesheet" type="text/css" href="./resources/bootstrap.min.css">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
 
-<link rel="stylesheet" type="text/css" href="./resources/font-awesome.min.css">
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home" id="home">
+        <div class="home__container bd-grid">
+          <h1 class="home__title"><span>HI</span><br />I'm Sundy</h1>
 
-<link rel="stylesheet" type="text/css" href="./resources/animate.css">
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-link"
+              ><i class="bx bx-up-arrow-alt"></i>Scroll down</a
+            >
+          </div>
 
-<link rel="stylesheet" type="text/css" href="./resources/select2.min.css">
+          <img src="assets/img/sundy_profile.png" alt="" class="home__img" />
+        </div>
+      </section>
 
-<link rel="stylesheet" type="text/css" href="./resources/util.css">
-<link rel="stylesheet" type="text/css" href="./resources/main.css">
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
 
-<meta name="robots" content="noindex, follow">
-<body data-new-gr-c-s-check-loaded="14.1114.0" data-gr-ext-installed="">
-<div class="bg-img1 size1 flex-w flex-c-m p-t-55 p-b-55 p-l-15 p-r-15" style="background-image: url(&#39;images/bg01.jpg&#39;);">
-<div class="wsize1 bor1 bg1 p-t-90 p-b-5 p-l-15 p-r-15 respon1">
-<div class="wrappic1">
-<img src="images/logo.png" alt="LOGO">
-</div>
-<p class="txt-center m1-txt1 p-t-33 p-b-68">
-Website is under construction
-</p>
-<div class="wsize2 flex-w flex-c hsize1 cd100">
-<div class="flex-col-c-m size2 how-countdown">
-<span class="l1-txt1 p-b-9 days">19</span>
-<span class="s1-txt1">Days</span>
-</div>
-<div class="flex-col-c-m size2 how-countdown">
-<span class="l1-txt1 p-b-9 hours">17</span>
-<span class="s1-txt1">Hours</span>
-</div>
-<div class="flex-col-c-m size2 how-countdown">
-<span class="l1-txt1 p-b-9 minutes">59</span>
-<span class="s1-txt1">Minutes</span>
-</div>
-<div class="flex-col-c-m size2 how-countdown">
-<span class="l1-txt1 p-b-9 seconds">31</span>
-<span class="s1-txt1">Seconds</span>
-</div>
-</div>
-</div>
-</div>
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/sundy_profile_02.png" alt="" />
+          </div>
 
-<script src="./resources/jquery-3.2.1.min.js.download"></script>
+          <div>
+            <h2 class="about__subtitle">Sundy Thawdarr Shwe</h2>
+            <span class="about__profession"
+              >Foodie Explorer • Coffee Lover <br />
+              Web Dev • Tech Geek
+            </span>
 
-<script src="./resources/popper.js.download"></script>
-<script src="./resources/bootstrap.min.js.download"></script>
+            <p class="about__text">
+              Intrigued by traveling, technology, strategy, research, books,
+              fabulous food, and even better conversations.
+            </p>
 
-<script src="./resources/select2.min.js.download"></script>
+            <p class="about__text">
+              Seeking to be inspired, to envision the bright future, to work
+              hard for things that are meaningful, and to be surrounded by those
+              who bring out the best in me.
+            </p>
 
-<script src="./resources/moment.min.js.download"></script>
-<script src="./resources/moment-timezone.min.js.download"></script>
-<script src="./resources/moment-timezone-with-data.min.js.download"></script>
-<script src="./resources/countdowntime.js.download"></script>
-<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 19,
-			endtimeHours: 18,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
+            <div class="about__social">
+              <a
+                href="https://www.linkedin.com/in/sundy-shwe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="url"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/SundyShwe"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="url"
+                ><i class="bx bxl-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<script src="./resources/tilt.jquery.min.js.download"></script>
-<script>
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
 
-<script src="./resources/main.js.download"></script>
+        <div class="skills__container">
+          <div class="skills__box">
+            <!-- <h3 class="skills__subtitle">Programming Languages</h3>
+            <span class="skills__name">Javascript (ES6+)</span>
+            <span class="skills__name">TypeScript</span>
+            <span class="skills__name">HTML5</span>
+            <span class="skills__name">CSS3</span>
+            <span class="skills__name">SASS</span>
+            <span class="skills__name">PHP</span>
+            <span class="skills__name">Java</span>
+            <span class="skills__name">JQuery</span>
 
-<script async="" src="./resources/js"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            <h3 class="skills__subtitle">Frameworks and Libraries</h3>
+            <span class="skills__name">React</span>
+            <span class="skills__name">Redux</span>
+            <span class="skills__name">Angular</span>
+            <span class="skills__name">RxJS</span>
+            <span class="skills__name">Node Js</span>
+            <span class="skills__name">Express Js</span>
+            <span class="skills__name">Next Js</span>
+            <span class="skills__name">Spring</span>
 
-  gtag('config', 'UA-23581568-13');
-</script>
-<script defer="" src="./resources/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon="{&quot;rayId&quot;:&quot;7e1ad6b3d947e27f&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+            <h3 class="skills__subtitle">UI</h3>
+            <span class="skills__name">Bootstrap</span>
+            <span class="skills__name">Tailwind</span>
 
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-  div.grammarly-desktop-integration {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select:none;
-    user-select:none;
-  }
+            <h3 class="skills__subtitle">Building</h3>
+            <span class="skills__name">Webpack</span>
+            <span class="skills__name">NPM</span>
+            <span class="skills__name">Angular CLI</span>
+            <span class="skills__name">Maven</span> -->
 
-  div.grammarly-desktop-integration:before {
-    content: attr(data-content);
-  }
-</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+            <h3 class="skills__subtitle">Front End</h3>
+            <span class="skills__name">HTML5</span>
+            <span class="skills__name">CSS3</span>
+            <span class="skills__name">Javascript</span>
+            <span class="skills__name">TypeScript</span>
+            <span class="skills__name">React</span>
+            <span class="skills__name">Angular</span>
+            <span class="skills__name">Bootstrap</span>
+            <span class="skills__name">GraphQL</span>
+            <span class="skills__name">JQuery</span>
+            <span class="skills__name">JSON</span>
+            <span class="skills__name">AJAX</span>
+
+            <h3 class="skills__subtitle">Back End</h3>
+            <span class="skills__name">Node Js</span>
+            <span class="skills__name">Express Js</span>
+            <span class="skills__name">PHP</span>
+            <span class="skills__name">Java</span>
+            <span class="skills__name">MongoDB</span>
+            <span class="skills__name">MySQL</span>
+
+            <h3 class="skills__subtitle">Tools</h3>
+            <span class="skills__name">Redux</span>
+            <span class="skills__name">RxJS</span>
+            <span class="skills__name">Spring</span>
+            <span class="skills__name">Webpack</span>
+            <span class="skills__name">NPM</span>
+            <span class="skills__name">Angular CLI</span>
+            <span class="skills__name">Maven</span>
+            <span class="skills__name">Git</span>
+            <span class="skills__name">Rest API</span>
+            <span class="skills__name">JWT</span>
+
+            <h3 class="skills__subtitle">Key Skills</h3>
+            <span class="skills__name">Data structures and Algorithms</span>
+            <span class="skills__name">Responsive Web Design</span>
+            <span class="skills__name">Asynchronous Programming</span>
+            <span class="skills__name">Single Page Applications</span>
+            <span class="skills__name">Cross-Browser Compatibility </span>
+            <span class="skills__name">Problem-Solving</span>
+            <span class="skills__name">Performance Optimization</span>
+            <span class="skills__name">Cross-functional collaboration </span>
+            <span class="skills__name">Strong Communication </span>
+          </div>
+
+          <!-- <div class="skills__img">
+            <img src="assets/img/skills.png" alt="" />
+          </div> -->
+        </div>
+      </section>
+
+      <!--===== PORTFOLIO =====-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+
+        <!-- <div class="portfolio__container bd-grid">
+          <div class="portfolio__img">
+            <img src="assets/img/work1.jpg" alt="" />
+
+            <div class="portfolio__link">
+              <a
+                href="https://alan-ai-news-nicky.netlify.app/"
+                class="button"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="portfolio__link-name"
+                >Alan Voice AI (React / Material UI)</a
+              >
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img src="assets/img/work2.jpg" alt="" />
+
+            <div class="portfolio__link">
+              <a
+                href="https://ecommerce-js-nicky.netlify.app/"
+                class="button"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="portfolio__link-name"
+                >E-Commerce (React / Commerce.js)</a
+              >
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img src="assets/img/work3.jpg" alt="" />
+
+            <div class="portfolio__link">
+              <a
+                href="https://zukui1984.github.io/pokedex/"
+                class="button"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="portfolio__link-name"
+                >Pokedex (CSS / JS / API)</a
+              >
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img src="assets/img/work4.jpg" alt="" />
+
+            <div class="portfolio__link">
+              <a
+                href="https://myflix-angular-nicky.netlify.app"
+                class="button"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="portfolio__link-name"
+                >MyFlix - Angular</a
+              >
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img src="assets/img/work5.jpg" alt="" />
+
+            <div class="portfolio__link">
+              <a
+                href="https://user-images.githubusercontent.com/71074389/112532933-b1fbf100-8da9-11eb-9556-18671fd6d7c2.mp4"
+                class="button"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="portfolio__link-name"
+                >Chat App (React / Expo / Firebase)</a
+              >
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img src="assets/img/work6.jpg" alt="" />
+
+            <div class="portfolio__link">
+              <a
+                href="https://zukui1984.github.io/tincat/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+                class="portfolio__link-name"
+                >TinCat (Bootstrap / CSS)</a
+              >
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <div class="contact__info">
+            <h3 class="contact__subtitle">EMAIL</h3>
+            <span class="contact__text"></span>
+          </div>
+
+          <form action="" class="contact__form">
+            <div class="contact__inputs">
+              <input type="text" placeholder="Name" class="contact__input" />
+              <input type="mail" placeholder="Email" class="contact__input" />
+            </div>
+
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+
+            <input type="submit" value="Confirm" class="contact__button" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+      <div class="footer__container bd-grid">
+        <div class="footer__data">
+          <h2 class="footer__title">Sundy Thawdarr Shwe</h2>
+          <p class="footer__text">Portfolio website</p>
+        </div>
+
+        <div class="footer__data">
+          <h2 class="footer__title">EXPLORE</h2>
+          <ul>
+            <li><a href="#home" class="footer__link">Home</a></li>
+            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="#skills" class="footer__link">Skills</a></li>
+            <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+            <li><a href="#Contact" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__data">
+          <h2 class="footer__title">FOLLOW</h2>
+          <a
+            href="https://www.linkedin.com/in/sundy-shwe/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__social"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/SundyShwe"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__social"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
