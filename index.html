@@ -1,350 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sundy Thawdarr Shwe</title>
+    <meta content="Sundy's Portfolio" name="description" />
+    <meta content="Software Engineer, Web Developer, Angular, React, JavaScript, TypeScript" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
     <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <title>Sundy Thawdarr Shwe</title>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
+
   <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#" class="nav__logo">&lt; SUNDY /&gt;</a>
-        </div>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">Portfolio</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
-
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home" id="home">
-        <div class="home__container bd-grid">
-          <h1 class="home__title"><span>HI</span><br />I'm Sundy</h1>
-
-          <div class="home__scroll">
-            <a href="#about" class="home__scroll-link"
-              ><i class="bx bx-up-arrow-alt"></i>Scroll down</a
-            >
-          </div>
-
-          <img src="assets/img/sundy_profile.png" alt="" class="home__img" />
-        </div>
-      </section>
-
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="assets/img/sundy_profile_02.png" alt="" />
-          </div>
-
-          <div>
-            <h2 class="about__subtitle">Sundy Thawdarr Shwe</h2>
-            <span class="about__profession">
-              Foodie • Explorer • Coffee Lover <br />
-              Web Dev • Tech Geek • Coding Enthusiast
-            </span>
-
-            <p class="about__text">
-              Intrigued by technology, strategy, research, books, traveling and
-              fabulous food.
-            </p>
-
-            <p class="about__text">
-              Seeking to be inspired, to know how to be grateful, to work hard
-              for things that are meaningful, and to be surrounded by those who
-              bring out the best in me.
-            </p>
-
-            <div class="about__social">
-              <a
-                href="https://www.linkedin.com/in/sundy-shwe/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="url"
-                ><i class="bx bxl-linkedin"></i
-              ></a>
-              <a
-                href="https://github.com/SundyShwe"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="url"
-                ><i class="bx bxl-github"></i
-              ></a>
-            </div>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile">
+          <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle" />
+          <h1 class="text-light">
+            <a href="index.html">&lt; SUNDY /&gt;</a>
+          </h1>
+          <div class="social-links mt-3 text-center">
+            <a href="mailto:sundyshwe@gmail.com"><i class="bx bxl-gmail"></i></a>
+            <a href="https://github.com/SundyShwe"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/sundy-shwe/"><i class="bx bxl-linkedin"></i></a>
           </div>
         </div>
-      </section>
 
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills__container">
-          <div class="skills__box">
-            <!-- <h3 class="skills__subtitle">Programming Languages</h3>
-            <span class="skills__name">Javascript (ES6+)</span>
-            <span class="skills__name">TypeScript</span>
-            <span class="skills__name">HTML5</span>
-            <span class="skills__name">CSS3</span>
-            <span class="skills__name">SASS</span>
-            <span class="skills__name">PHP</span>
-            <span class="skills__name">Java</span>
-            <span class="skills__name">JQuery</span>
-
-            <h3 class="skills__subtitle">Frameworks and Libraries</h3>
-            <span class="skills__name">React</span>
-            <span class="skills__name">Redux</span>
-            <span class="skills__name">Angular</span>
-            <span class="skills__name">RxJS</span>
-            <span class="skills__name">Node Js</span>
-            <span class="skills__name">Express Js</span>
-            <span class="skills__name">Next Js</span>
-            <span class="skills__name">Spring</span>
-
-            <h3 class="skills__subtitle">UI</h3>
-            <span class="skills__name">Bootstrap</span>
-            <span class="skills__name">Tailwind</span>
-
-            <h3 class="skills__subtitle">Building</h3>
-            <span class="skills__name">Webpack</span>
-            <span class="skills__name">NPM</span>
-            <span class="skills__name">Angular CLI</span>
-            <span class="skills__name">Maven</span> -->
-
-            <h3 class="skills__subtitle">Front End</h3>
-            <span class="skills__name">HTML5</span>
-            <span class="skills__name">CSS3</span>
-            <span class="skills__name">Javascript</span>
-            <span class="skills__name">TypeScript</span>
-            <span class="skills__name">React</span>
-            <span class="skills__name">Angular</span>
-            <span class="skills__name">Bootstrap</span>
-            <span class="skills__name">GraphQL</span>
-            <span class="skills__name">JQuery</span>
-            <span class="skills__name">JSON</span>
-            <span class="skills__name">AJAX</span>
-
-            <h3 class="skills__subtitle">Back End</h3>
-            <span class="skills__name">Node Js</span>
-            <span class="skills__name">Express Js</span>
-            <span class="skills__name">PHP</span>
-            <span class="skills__name">Java</span>
-            <span class="skills__name">MongoDB</span>
-            <span class="skills__name">MySQL</span>
-
-            <h3 class="skills__subtitle">Tools</h3>
-            <span class="skills__name">Redux</span>
-            <span class="skills__name">RxJS</span>
-            <span class="skills__name">Spring</span>
-            <span class="skills__name">Webpack</span>
-            <span class="skills__name">NPM</span>
-            <span class="skills__name">Angular CLI</span>
-            <span class="skills__name">Maven</span>
-            <span class="skills__name">Git</span>
-            <span class="skills__name">Rest API</span>
-            <span class="skills__name">JWT</span>
-
-            <h3 class="skills__subtitle">Key Skills</h3>
-            <span class="skills__name">Data structures and Algorithms</span>
-            <span class="skills__name">Responsive Web Design</span>
-            <span class="skills__name">Asynchronous Programming</span>
-            <span class="skills__name">Single Page Applications</span>
-            <span class="skills__name">Cross-Browser Compatibility </span>
-            <span class="skills__name">Problem-Solving</span>
-            <span class="skills__name">Performance Optimization</span>
-            <span class="skills__name">Cross-functional collaboration </span>
-            <span class="skills__name">Strong Communication </span>
-          </div>
-
-          <!-- <div class="skills__img">
-            <img src="assets/img/skills.png" alt="" />
-          </div> -->
-        </div>
-      </section>
-
-      <!--===== PORTFOLIO =====-->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section-title">Portfolio</h2>
-
-        <div class="portfolio__container bd-grid">
-          <div class="portfolio__img">
-            <img src="assets/img/work1.jpg" alt="" />
-
-            <div class="portfolio__link">
-              <a
-                href="https://word-game-f4fd4.web.app/"
-                class="button"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="portfolio__link-name"
-                >Word Game <br />
-                (Angular 16 / TypeScript)</a
-              >
-            </div>
-          </div>
-          <!-- <div class="portfolio__img">
-            <img src="assets/img/work2.jpg" alt="" />
-
-            <div class="portfolio__link">
-              <a
-                href="https://ecommerce-js-nicky.netlify.app/"
-                class="button"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="portfolio__link-name"
-                >E-Commerce (React / Commerce.js)</a
-              >
-            </div>
-          </div>
-          <div class="portfolio__img">
-            <img src="assets/img/work3.jpg" alt="" />
-
-            <div class="portfolio__link">
-              <a
-                href="https://zukui1984.github.io/pokedex/"
-                class="button"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="portfolio__link-name"
-                >Pokedex (CSS / JS / API)</a
-              >
-            </div>
-          </div>
-          <div class="portfolio__img">
-            <img src="assets/img/work4.jpg" alt="" />
-
-            <div class="portfolio__link">
-              <a
-                href="https://myflix-angular-nicky.netlify.app"
-                class="button"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="portfolio__link-name"
-                >MyFlix - Angular</a
-              >
-            </div>
-          </div>
-          <div class="portfolio__img">
-            <img src="assets/img/work5.jpg" alt="" />
-
-            <div class="portfolio__link">
-              <a
-                href="https://user-images.githubusercontent.com/71074389/112532933-b1fbf100-8da9-11eb-9556-18671fd6d7c2.mp4"
-                class="button"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="portfolio__link-name"
-                >Chat App (React / Expo / Firebase)</a
-              >
-            </div>
-          </div>
-          <div class="portfolio__img">
-            <img src="assets/img/work6.jpg" alt="" />
-
-            <div class="portfolio__link">
-              <a
-                href="https://zukui1984.github.io/tincat/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="button"
-                class="portfolio__link-name"
-                >TinCat (Bootstrap / CSS)</a
-              >
-            </div>
-          </div> -->
-        </div>
-      </section>
-
-      <!--===== CONTACT =====-->
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer section" id="contact">
-      <div class="footer__container bd-grid">
-        <div class="footer__data">
-          <h2 class="footer__title">Sundy Thawdarr Shwe</h2>
-          <p class="footer__text">
-            Fairfield, Iowa 52557 <br />
-            +1 641.233.9330 <br />
-            sundyshwe@gmail.com
-          </p>
-        </div>
-
-        <div class="footer__data">
-          <h2 class="footer__title">EXPLORE</h2>
+        <nav id="navbar" class="nav-menu navbar">
           <ul>
-            <li><a href="#home" class="footer__link">Home</a></li>
-            <li><a href="#about" class="footer__link">About</a></li>
-            <li><a href="#skills" class="footer__link">Skills</a></li>
-            <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-            <li><a href="#Contact" class="footer__link">Contact</a></li>
+            <!-- <li>
+              <a href="#hero" class="nav-link scrollto active"
+                ><i class="bx bx-home"></i> <span>Home</span></a
+              >
+            </li> -->
+            <li>
+              <a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
+            </li>
+            <li>
+              <a href="#skills" class="nav-link scrollto"><i class="bx bx-trophy"></i> <span>Skills</span></a>
+            </li>
+            <li>
+              <a href="#resume" class="nav-link scrollto"><i class="bx bx-spreadsheet"></i> <span>Background</span></a>
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-link scrollto"><i class="bx bxl-codepen"></i> <span>Portfolio</span></a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
+            </li>
           </ul>
-        </div>
-
-        <div class="footer__data">
-          <h2 class="footer__title">CONTACT</h2>
-          <a
-            href="https://www.linkedin.com/in/sundy-shwe/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footer__social"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/SundyShwe"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footer__social"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a
-            href="mailto:sundyshwe@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="footer__social"
-            ><i class="bx bx-envelope"></i
-          ></a>
-        </div>
+        </nav>
+        <!-- .nav-menu -->
       </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>SUNDY SHWE</h2>
+            <p class="fst-italic">Foodie • Explorer • Coffee Lover • Web Dev • Tech Geek • Coding Enthusiast</p>
+            <p class="fst-italic">Intrigued by technology, research, books, travels and even better conversions.</p>
+            <p class="fst-italic">
+              Seeking to be inspired, to work hard for things that are meaningful, and to be surrounded by those who bring out the best in me.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-right">
+              <img src="assets/img/profile-img.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <h3>About Me</h3>
+              <p class="text-justify">
+                Passionate Software Engineer with over 10 years of developing web applications using a wide range of technologies. Deep foundation in
+                JavaScript, TypeScript and proficiency in modern JavaScript frameworks, particularly Angular, React and NodeJS.
+                <br />A resourceful and self-driven team player who is a lifelong learner and loves to embrace new challenges as opportunities to grow
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <!-- <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Website:</strong> <span>sundyshwe.github.io</span>
+                    </li> -->
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Phone:</strong> <span>+641 233 9330</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>City:</strong> <span>Fairfield, Iowa, USA</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <!-- <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Degree:</strong> <span>Master</span>
+                    </li> -->
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Email:</strong>
+                      <span>sundyshwe@gmail.com</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Available:</strong>
+                      <span> Fulltime W2 </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Skills</h2>
+          </div>
+          <div class="skill-item pb-0">
+            <!-- Row 1 -->
+            <div class="row pb-2">
+              <!-- JavaScript -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/javascript.svg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>JavaScript</b>
+                </div>
+              </div>
+              <!-- TypeScript -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/typescript.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>TypeScrip</b>
+                </div>
+              </div>
+              <!-- Angular -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/angular.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Angular</b>
+                </div>
+              </div>
+              <!-- React -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/react.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>React</b>
+                </div>
+              </div>
+              <!-- Node -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/node.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Node JS</b>
+                </div>
+              </div>
+              <!-- Express -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/express.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Express</b>
+                </div>
+              </div>
+
+              <!-- PHP -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/php.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>PHP</b>
+                </div>
+              </div>
+              <!-- Java -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/java.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Java</b>
+                </div>
+              </div>
+              <!-- html -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/spring.svg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Spring</b>
+                </div>
+              </div>
+            </div>
+
+            <!-- ROw 2 -->
+            <div class="row pb-2">
+              <!-- NPM -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/npm.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>NPM</b>
+                </div>
+              </div>
+              <!-- Webpack -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/webpack.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Webpack</b>
+                </div>
+              </div>
+              <!-- Angular CLI -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/angularcli.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Angular CLI</b>
+                </div>
+              </div>
+              <!-- Rxjs -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/rxjs.svg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>RxJS</b>
+                </div>
+              </div>
+              <!-- Redux -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/redux.svg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Redux</b>
+                </div>
+              </div>
+              <!-- Jasmine -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/jasmine.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Jasmine</b>
+                </div>
+              </div>
+              <!-- Jasmine -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/karma.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Karma</b>
+                </div>
+              </div>
+              <!-- Jest -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/jest.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Jest</b>
+                </div>
+              </div>
+              <!-- Rest -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/api.svg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>REST API</b>
+                </div>
+              </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="row pb-2">
+              <!-- html -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/html.svg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>HTML5</b>
+                </div>
+              </div>
+              <!-- CSS -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/css.svg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>CSS</b>
+                </div>
+              </div>
+              <!-- SASS -->
+              <div class="col-3 col-md-1 card" data-aos="fade-up">
+                <img src="assets/img/skills/sass.png" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>SASS</b>
+                </div>
+              </div>
+              <!-- Bootstarap -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/bootstrap.svg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Bootstarp</b>
+                </div>
+              </div>
+              <!-- MySQL -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/mysql.svg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>MySQL</b>
+                </div>
+              </div>
+              <!-- MongoDB -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/mongodb.jpeg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>MongoDB</b>
+                </div>
+              </div>
+              <!-- Github -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/github.svg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>Github</b>
+                </div>
+              </div>
+              <!-- gitlab -->
+              <div class="col-3 col-md-1 card m-1" data-aos="fade-up">
+                <img src="assets/img/skills/gitlab.svg" class="mx-auto d-block" />
+                <div class="skill-name">
+                  <b>GitLab</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container">
+          <div class="section-title">
+            <h2>Education and Experience</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Master of Science (Computer Science)</h4>
+                <h5>2022 - 2025</h5>
+                <p>
+                  <em>Maharishi International University, Fairfield, IA</em>
+                </p>
+                <p>(currently taking distance online classes)</p>
+              </div>
+              <div class="resume-item">
+                <h4>Master of Science (Information Studies)</h4>
+                <h5>2010</h5>
+                <p><em>Nanyang Technological University, Singapore</em></p>
+              </div>
+              <div class="resume-item">
+                <h4>Bachelor of Science (Computer Science)</h4>
+                <h5>2005</h5>
+                <p><em>University of Computer Studies, Yangon, Myanmar</em></p>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Direcctor of Software Engineering</h4>
+                <h5>2017 - 2022</h5>
+                <p><em>Amara Stars Co Ltd, Yangon, Myanmar </em></p>
+              </div>
+              <div class="resume-item">
+                <h4>IT Analyst</h4>
+                <h5>2012 - 2017</h5>
+                <p><em>DUKE-NUS Graduate Medical School, Singapore</em></p>
+              </div>
+              <div class="resume-item">
+                <h4>Software Engineer</h4>
+                <h5>2010 - 2012</h5>
+                <p><em>Cremeworkz Pte Ltd, Singapore</em></p>
+              </div>
+              <div class="resume-item">
+                <h4>Web Developer</h4>
+                <h5>2005 - 2008</h5>
+                <p><em>Navistar Myanmar Web Solution, Yangon, Myanmar</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Resume Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Most Recent Projects</h2>
+          </div>
+
+          <!-- <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-card">Card</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul>
+            </div>
+          </div> -->
+
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/wordgame.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <div class="portfolio-tech">Angular with Dictionary API</div>
+                  <div class="d-flex">
+                    <a href="https://github.com/SundyShwe/WordGame" target="_blank"><i class="bx bx-code"></i> Code</a>
+                    <a href="https://word-game-f4fd4.web.app/words" target="_blank"><i class="bx bx-globe"></i> Live</a>
+                    <!-- <div class="col">
+                    </div>
+                    <div class="col">
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/splitz-app.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <div class="portfolio-tech">Expense sharing and tracking app <br />Angular, Node, Express and MongoDB</div>
+                  <div class="d-flex">
+                    <a href="https://github.com/SundyShwe/splitz-app" target="_blank"><i class="bx bx-code"></i> Code</a>
+                    <a href="#" target="_blank"><i class="bx bx-globe"></i> Live</a>
+                    <!-- <div class="col">
+                    </div>
+                    <div class="col">
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+          <div class="row" data-aos="fade-in">
+            <div class="col-md-6 col-sm-12">
+              <div class="card mb-2" style="cursor: auto; padding: 20px !important">
+                <div class="mx-auto d-block list-inline-item">
+                  <i class="bx bx-envelope" style="font-size: 3rem !important"></i>
+                </div>
+
+                <div class="mx-auto d-block" style="margin-top: 20px !important">
+                  <a href="mailto:sundyshwe@gmail.com">
+                    <b>sundyshwe@gmail.com</b>
+                  </a>
+                  <div>Email me</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <div class="card mb-2" style="cursor: auto; padding: 20px !important">
+                <div class="mx-auto d-block list-inline-item">
+                  <i class="bx bx-phone-call" style="font-size: 3rem !important"></i>
+                </div>
+
+                <div class="mx-auto d-block" style="margin-top: 20px !important">
+                  <a href="#">
+                    <b>+1(641) 233-9330</b>
+                  </a>
+                  <div>Call me</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row" data-aos="fade-in">
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">Email Me</div>
+            </div>
+
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">Call Me</div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">@SundyShwe</div>
     </footer>
+    <!-- End  Footer -->
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <!--===== MAIN JS =====-->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
