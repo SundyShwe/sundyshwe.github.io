@@ -1,3 +1,4 @@
+import React from "react";
 function About(props) {
   const { about } = props;
 

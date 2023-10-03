@@ -1,3 +1,4 @@
+import React from "react";
 function SkillCard(props) {
   const { icon, name } = props;
   return (
