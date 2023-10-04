@@ -1,13 +1,16 @@
-import React from "react";
-function About(props) {
-  const { about } = props;
+import React, { useContext } from "react";
+import { AppContext } from "../App";
+function About() {
+  const { about } = useContext(AppContext);
 
   return (
     <>
       <section id="about" className="about">
         <div className="container">
           <div className="section-title">
-            <h2>{about.name.toUpperCase()}</h2>
+            <h2>
+              {about.firstname.toUpperCase()} {about.lastname.toUpperCase()}
+            </h2>
             <p className="fst-italic">Foodie • Explorer • Coffee Lover • Web Dev • Tech Geek • Coding Enthusiast</p>
             <p className="fst-italic">Intrigued by technology, research, books, travels and even better conversions.</p>
             <p className="fst-italic">Seeking to be inspired, to work hard for things that are meaningful, and to be surrounded by those who bring out the best in me.</p>
@@ -15,7 +18,7 @@ function About(props) {
 
           <div className="row">
             <div className="col-lg-4" data-aos="fade-right">
-              <img src="img/profile-img.jpg" className="img-fluid" alt="" />
+              <img src={"img/" + about.profileImg} className="img-fluid" alt="profile image" />
             </div>
             <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
               <h3>About Me</h3>

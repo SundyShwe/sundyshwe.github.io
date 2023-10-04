@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import NavBar from "./NavBar";
+import { AppContext } from "../App";
 
-function Header({ about }) {
+function Header() {
+  const { about } = useContext(AppContext);
   return (
     <>
       <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -9,9 +11,9 @@ function Header({ about }) {
       <header id="header">
         <div className="d-flex flex-column">
           <div className="profile">
-            <img src="img/profile-img.jpg" alt="" className="img-fluid rounded-circle" />
+            <img src={"img/" + about.profileImg} alt="profile image" className="img-fluid rounded-circle" />
             <h1 className="text-light">
-              <a href="index.html">&lt; SUNDY /&gt;</a>
+              <a href="index.html">&lt; {about.firstname.toUpperCase()} /&gt;</a>
             </h1>
             <div className="social-links mt-3 text-center">
               <a href={"mailto:" + about.email}>

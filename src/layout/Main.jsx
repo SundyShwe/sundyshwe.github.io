@@ -1,8 +1,19 @@
 import React from "react";
-function Main(props) {
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Projects from "../components/Projects";
+import Resume from "../components/Resume";
+import Skills from "../components/Skills";
+function Main() {
   return (
     <>
-      <main id="main">{props.children}</main>
+      <main id="main">
+        <About />
+        <Skills />
+        <Resume />
+        <Projects />
+        <Contact />
+      </main>
     </>
   );
 }

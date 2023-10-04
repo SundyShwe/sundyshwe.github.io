@@ -1,5 +1,7 @@
-import React from "react";
-function Contact({ about }) {
+import React, { useContext } from "react";
+import { AppContext } from "../App";
+function Contact() {
+  const { about } = useContext(AppContext);
   return (
     <>
       <section id="contact" className="contact">

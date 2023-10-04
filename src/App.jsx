@@ -1,27 +1,21 @@
-import React from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Projects from "./components/Projects";
-import Resume from "./components/Resume";
-import Skills from "./components/Skills";
+import React, { createContext, useState } from "react";
+
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import Main from "./layout/Main";
 
 import { aboutme } from "./data/aboutme";
+export const AppContext = createContext();
 
 function App() {
+  const [about] = useState(aboutme);
   return (
     <>
-      <Header about={aboutme} />
-      <Main>
-        <About about={aboutme} />
-        <Skills />
-        <Resume />
-        <Projects />
-        <Contact about={aboutme} />
-      </Main>
-      <Footer />
+      <AppContext.Provider value={{ about }}>
+        <Header />
+        <Main />
+        <Footer />
+      </AppContext.Provider>
     </>
   );
 }

@@ -8,7 +8,7 @@ function ResumeItem({ item }) {
         <p>
           <em>{item.place}</em>
         </p>
-        {item.note && <p>{item.note}</p>}
+        {item.note && <p>({item.note})</p>}
       </div>
     </>
   );
