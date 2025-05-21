@@ -45,7 +45,7 @@ function About() {
                     <li>
                       <i className="bi bi-chevron-right"></i>
                       <strong>Email:</strong>
-                      <span>{about.city}</span>
+                      <span>{about.email}</span>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"></i>

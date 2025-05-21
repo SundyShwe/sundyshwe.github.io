@@ -5,7 +5,7 @@ export const aboutme = {
   email: "sundyshwe@gmail.com",
   linkedIn: "https://www.linkedin.com/in/sundy-shwe/",
   github: "https://github.com/SundyShwe",
-  city: "Fairfield, Iowa, USA",
+  city: "Frisco, Texas, USA",
   available: "Fulltime W2",
   profileImg: "profile-img.jpg",
 };

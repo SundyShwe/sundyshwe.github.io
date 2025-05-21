@@ -1,6 +1,11 @@
 export const exp = [
   {
-    title: "Director / Lead Software Engineer",
+    title: "Senior Frontend Engineer",
+    year: "Jan 2024 - Present",
+    place: "Bank Of America, Frisco, Texas",
+  },
+  {
+    title: "Lead Software Engineer / Director",
     year: "2016 - 2022",
     place: "Amara Stars Co Ltd, Yangon, Myanmar",
   },

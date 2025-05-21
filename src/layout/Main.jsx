@@ -11,7 +11,6 @@ function Main() {
         <About />
         <Skills />
         <Resume />
-        <Projects />
         <Contact />
       </main>
     </>

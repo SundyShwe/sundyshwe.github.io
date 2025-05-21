@@ -20,11 +20,6 @@ function NavBar() {
             </a>
           </li>
           <li>
-            <a href="#portfolio" className="nav-link scrollto">
-              <i className="bx bxl-codepen"></i> <span>Portfolio</span>
-            </a>
-          </li>
-          <li>
             <a href="#contact" className="nav-link scrollto">
               <i className="bx bx-envelope"></i> <span>Contact</span>
             </a>
