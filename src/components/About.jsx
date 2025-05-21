@@ -23,9 +23,13 @@ function About() {
             <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
               <h3>About Me</h3>
               <p className="text-justify">
-                Passionate Software Engineer with over 10 years of developing web applications using a wide range of technologies. Deep foundation in JavaScript, TypeScript and
-                proficiency in modern JavaScript frameworks, particularly Angular, React and NodeJS.
-                <br />A resourceful and self-driven team player who is a lifelong learner and loves to embrace new challenges as opportunities to grow
+                Hi, I’m Sundy — a Frontend Engineer specializing in Javascript/Typescript Frameworks.
+                During my extensive years of experience, I build fast, scalable, and user-focused web applications.
+                <br />
+                I specialize in developing clean, maintainable code with component-based architecture, responsive UI, and strong emphasis on performance and usability.
+                I thrive in Agile environments, collaborate closely with cross-functional teams, and consistently deliver user-centric features that drive impact.
+                <br />I’m a resourceful, self-driven team player who embraces new challenges as opportunities to grow.
+                When I’m not coding, you’ll find me exploring new tech, sketching UI ideas, or hunting down the best coffee in town.
               </p>
               <div className="row">
                 <div className="col-lg-6">
